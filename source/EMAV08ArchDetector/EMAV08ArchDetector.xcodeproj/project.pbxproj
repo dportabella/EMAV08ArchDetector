@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D7DBE8E0C04A90C00D8835D /* VideoPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* VideoPlayer.cpp */; };
+		4DCD35CB0CBD74EF00047988 /* OpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCD35CA0CBD74EF00047988 /* OpenCV.framework */; };
+		4DCD35CF0CBD74F500047988 /* OpenCV.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DCD35CA0CBD74EF00047988 /* OpenCV.framework */; };
+		63118A970DCA044900E4FCC2 /* kk.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63118A950DCA044900E4FCC2 /* kk.h */; };
+		63118A980DCA044900E4FCC2 /* kk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63118A960DCA044900E4FCC2 /* kk.cpp */; };
+		63207EDB0DA8151F00A7F8A4 /* VideoCapture.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63207ED90DA8151F00A7F8A4 /* VideoCapture.h */; };
+		63207EDC0DA8151F00A7F8A4 /* VideoCapture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63207EDA0DA8151F00A7F8A4 /* VideoCapture.cpp */; };
+		634376460DC7C6E30098D7C1 /* MorphBlobDetector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 634376440DC7C6E30098D7C1 /* MorphBlobDetector.h */; };
+		634376470DC7C6E30098D7C1 /* MorphBlobDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 634376450DC7C6E30098D7C1 /* MorphBlobDetector.cpp */; };
+		637E654B0DC8991E0051695D /* HoughTransform.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 637E65490DC8991E0051695D /* HoughTransform.h */; };
+		637E654C0DC8991E0051695D /* HoughTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 637E654A0DC8991E0051695D /* HoughTransform.cpp */; };
+		637E65CD0DC9AEFB0051695D /* ArchDetector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 637E65CB0DC9AEFB0051695D /* ArchDetector.h */; };
+		637E65CE0DC9AEFB0051695D /* ArchDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 637E65CC0DC9AEFB0051695D /* ArchDetector.cpp */; };
+		6382E4520DBE6AB400D2A2C4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6382E4500DBE6AB400D2A2C4 /* main.cpp */; };
+		6394735E0DD74EDA0002CF2E /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6394735D0DD74EDA0002CF2E /* LICENSE.txt */; };
+		639473650DD7504C0002CF2E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 639473640DD7504C0002CF2E /* README.txt */; };
+		63B812F90DBE9EBF008545D7 /* CameraUndistort.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63B812F70DBE9EBF008545D7 /* CameraUndistort.h */; };
+		63B812FA0DBE9EBF008545D7 /* CameraUndistort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63B812F80DBE9EBF008545D7 /* CameraUndistort.cpp */; };
+		63B8137A0DBEA3E1008545D7 /* CombineFrames.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63B813780DBEA3E1008545D7 /* CombineFrames.h */; };
+		63B8137B0DBEA3E1008545D7 /* CombineFrames.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63B813790DBEA3E1008545D7 /* CombineFrames.cpp */; };
+		63DAF3ED0DC72A67007E9465 /* HorizonDetector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63DAF3EB0DC72A67007E9465 /* HorizonDetector.h */; };
+		63DAF3EE0DC72A67007E9465 /* HorizonDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63DAF3EC0DC72A67007E9465 /* HorizonDetector.cpp */; };
+		63E20D760DA6A8E100F8DBEC /* util.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63E20D740DA6A8E100F8DBEC /* util.h */; };
+		63E20D770DA6A8E100F8DBEC /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63E20D750DA6A8E100F8DBEC /* util.cpp */; };
+		63E20DDF0DA6AAE500F8DBEC /* testCircle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63E20DDD0DA6AAE500F8DBEC /* testCircle.h */; };
+		63E20DE00DA6AAE500F8DBEC /* testCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63E20DDE0DA6AAE500F8DBEC /* testCircle.cpp */; };
+		63E20E9C0DA6B07500F8DBEC /* VideoPlayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63E20E9B0DA6B07500F8DBEC /* VideoPlayer.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DC0C0E20CBD6F160015BB62 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4DCD35CF0CBD74F500047988 /* OpenCV.framework in CopyFiles */,
+				63E20D760DA6A8E100F8DBEC /* util.h in CopyFiles */,
+				63E20DDF0DA6AAE500F8DBEC /* testCircle.h in CopyFiles */,
+				63E20E9C0DA6B07500F8DBEC /* VideoPlayer.h in CopyFiles */,
+				63207EDB0DA8151F00A7F8A4 /* VideoCapture.h in CopyFiles */,
+				63B812F90DBE9EBF008545D7 /* CameraUndistort.h in CopyFiles */,
+				63B8137A0DBEA3E1008545D7 /* CombineFrames.h in CopyFiles */,
+				63DAF3ED0DC72A67007E9465 /* HorizonDetector.h in CopyFiles */,
+				634376460DC7C6E30098D7C1 /* MorphBlobDetector.h in CopyFiles */,
+				637E654B0DC8991E0051695D /* HoughTransform.h in CopyFiles */,
+				637E65CD0DC9AEFB0051695D /* ArchDetector.h in CopyFiles */,
+				63118A970DCA044900E4FCC2 /* kk.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* VideoPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoPlayer.cpp; sourceTree = "<group>"; };
+		4D7DBE570C04A8FF00D8835D /* EMAV08ArchDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMAV08ArchDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7DBE590C04A8FF00D8835D /* EMAV08ArchDetector-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "EMAV08ArchDetector-Info.plist"; sourceTree = "<group>"; };
+		4DCD35CA0CBD74EF00047988 /* OpenCV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCV.framework; path = ../OpenCV.framework; sourceTree = SOURCE_ROOT; };
+		63118A950DCA044900E4FCC2 /* kk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kk.h; sourceTree = "<group>"; };
+		63118A960DCA044900E4FCC2 /* kk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kk.cpp; sourceTree = "<group>"; };
+		63207ED90DA8151F00A7F8A4 /* VideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCapture.h; sourceTree = "<group>"; };
+		63207EDA0DA8151F00A7F8A4 /* VideoCapture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoCapture.cpp; sourceTree = "<group>"; };
+		634376440DC7C6E30098D7C1 /* MorphBlobDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MorphBlobDetector.h; sourceTree = "<group>"; };
+		634376450DC7C6E30098D7C1 /* MorphBlobDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MorphBlobDetector.cpp; sourceTree = "<group>"; };
+		637E65490DC8991E0051695D /* HoughTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoughTransform.h; sourceTree = "<group>"; };
+		637E654A0DC8991E0051695D /* HoughTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HoughTransform.cpp; sourceTree = "<group>"; };
+		637E65CB0DC9AEFB0051695D /* ArchDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchDetector.h; sourceTree = "<group>"; };
+		637E65CC0DC9AEFB0051695D /* ArchDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArchDetector.cpp; sourceTree = "<group>"; };
+		6382E4500DBE6AB400D2A2C4 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6394735D0DD74EDA0002CF2E /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		639473640DD7504C0002CF2E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		63B812F70DBE9EBF008545D7 /* CameraUndistort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraUndistort.h; sourceTree = "<group>"; };
+		63B812F80DBE9EBF008545D7 /* CameraUndistort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CameraUndistort.cpp; sourceTree = "<group>"; };
+		63B813780DBEA3E1008545D7 /* CombineFrames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombineFrames.h; sourceTree = "<group>"; };
+		63B813790DBEA3E1008545D7 /* CombineFrames.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CombineFrames.cpp; sourceTree = "<group>"; };
+		63DAF3EB0DC72A67007E9465 /* HorizonDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizonDetector.h; sourceTree = "<group>"; };
+		63DAF3EC0DC72A67007E9465 /* HorizonDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HorizonDetector.cpp; sourceTree = "<group>"; };
+		63E20D740DA6A8E100F8DBEC /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		63E20D750DA6A8E100F8DBEC /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		63E20DDD0DA6AAE500F8DBEC /* testCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testCircle.h; sourceTree = "<group>"; };
+		63E20DDE0DA6AAE500F8DBEC /* testCircle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testCircle.cpp; sourceTree = "<group>"; };
+		63E20E9B0DA6B07500F8DBEC /* VideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D7DBE550C04A8FF00D8835D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCD35CB0CBD74EF00047988 /* OpenCV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* FrameworkTest */ = {
+			isa = PBXGroup;
+			children = (
+				639473640DD7504C0002CF2E /* README.txt */,
+				6394735D0DD74EDA0002CF2E /* LICENSE.txt */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				4DBF872C0C0572BC00880673 /* Resources */,
+				4D9D40B00C04AC1600EEFFD0 /* Frameworks */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = FrameworkTest;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7796FE84155DC02AAC07 /* VideoPlayer.cpp */,
+				63E20E9B0DA6B07500F8DBEC /* VideoPlayer.h */,
+				63E20D740DA6A8E100F8DBEC /* util.h */,
+				63E20D750DA6A8E100F8DBEC /* util.cpp */,
+				63E20DDD0DA6AAE500F8DBEC /* testCircle.h */,
+				63E20DDE0DA6AAE500F8DBEC /* testCircle.cpp */,
+				63207ED90DA8151F00A7F8A4 /* VideoCapture.h */,
+				63207EDA0DA8151F00A7F8A4 /* VideoCapture.cpp */,
+				6382E4500DBE6AB400D2A2C4 /* main.cpp */,
+				63B812F70DBE9EBF008545D7 /* CameraUndistort.h */,
+				63B812F80DBE9EBF008545D7 /* CameraUndistort.cpp */,
+				63B813780DBEA3E1008545D7 /* CombineFrames.h */,
+				63B813790DBEA3E1008545D7 /* CombineFrames.cpp */,
+				63DAF3EB0DC72A67007E9465 /* HorizonDetector.h */,
+				63DAF3EC0DC72A67007E9465 /* HorizonDetector.cpp */,
+				634376440DC7C6E30098D7C1 /* MorphBlobDetector.h */,
+				634376450DC7C6E30098D7C1 /* MorphBlobDetector.cpp */,
+				637E65490DC8991E0051695D /* HoughTransform.h */,
+				637E654A0DC8991E0051695D /* HoughTransform.cpp */,
+				637E65CB0DC9AEFB0051695D /* ArchDetector.h */,
+				637E65CC0DC9AEFB0051695D /* ArchDetector.cpp */,
+				63118A950DCA044900E4FCC2 /* kk.h */,
+				63118A960DCA044900E4FCC2 /* kk.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D7DBE570C04A8FF00D8835D /* EMAV08ArchDetector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D9D40B00C04AC1600EEFFD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DCD35CA0CBD74EF00047988 /* OpenCV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DBF872C0C0572BC00880673 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D7DBE590C04A8FF00D8835D /* EMAV08ArchDetector-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D7DBE560C04A8FF00D8835D /* EMAV08ArchDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D7DBE5A0C04A8FF00D8835D /* Build configuration list for PBXNativeTarget "EMAV08ArchDetector" */;
+			buildPhases = (
+				4DC0C0E20CBD6F160015BB62 /* CopyFiles */,
+				4D7DBE530C04A8FF00D8835D /* Resources */,
+				4D7DBE540C04A8FF00D8835D /* Sources */,
+				4D7DBE550C04A8FF00D8835D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMAV08ArchDetector;
+			productName = EMAV08ArchDetector;
+			productReference = 4D7DBE570C04A8FF00D8835D /* EMAV08ArchDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "EMAV08ArchDetector" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* FrameworkTest */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D7DBE560C04A8FF00D8835D /* EMAV08ArchDetector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D7DBE530C04A8FF00D8835D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6394735E0DD74EDA0002CF2E /* LICENSE.txt in Resources */,
+				639473650DD7504C0002CF2E /* README.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D7DBE540C04A8FF00D8835D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7DBE8E0C04A90C00D8835D /* VideoPlayer.cpp in Sources */,
+				63E20D770DA6A8E100F8DBEC /* util.cpp in Sources */,
+				63E20DE00DA6AAE500F8DBEC /* testCircle.cpp in Sources */,
+				63207EDC0DA8151F00A7F8A4 /* VideoCapture.cpp in Sources */,
+				6382E4520DBE6AB400D2A2C4 /* main.cpp in Sources */,
+				63B812FA0DBE9EBF008545D7 /* CameraUndistort.cpp in Sources */,
+				63B8137B0DBEA3E1008545D7 /* CombineFrames.cpp in Sources */,
+				63DAF3EE0DC72A67007E9465 /* HorizonDetector.cpp in Sources */,
+				634376470DC7C6E30098D7C1 /* MorphBlobDetector.cpp in Sources */,
+				637E654C0DC8991E0051695D /* HoughTransform.cpp in Sources */,
+				637E65CE0DC9AEFB0051695D /* ArchDetector.cpp in Sources */,
+				63118A980DCA044900E4FCC2 /* kk.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+		4D7DBE5B0C04A8FF00D8835D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_4)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_5)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../opencv\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../..\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/..\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_4 = "\"$(SRCROOT)/..\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_5 = "\"$(SRCROOT)/..\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "EMAV08ArchDetector-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = EMAV08ArchDetector;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		4D7DBE5C0C04A8FF00D8835D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_4)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_5)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../opencv\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../..\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/..\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_4 = "\"$(SRCROOT)/..\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_5 = "\"$(SRCROOT)/..\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "EMAV08ArchDetector-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = EMAV08ArchDetector;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "EMAV08ArchDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D7DBE5A0C04A8FF00D8835D /* Build configuration list for PBXNativeTarget "EMAV08ArchDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7DBE5B0C04A8FF00D8835D /* Debug */,
+				4D7DBE5C0C04A8FF00D8835D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
